@@ -73,10 +73,15 @@ export default defineConfig({
       globalModulePaths: [],
       generateScopedName: undefined,
       hashPrefix: "",
-      localsConvention: "camelCaseOnly",
+      localsConvention: "camelCaseOnly"
     },
     preprocessorOptions: {
-      scss: {},
+      scss: {
+        additionalData: `
+          @use "@/styles/helpers" as *;
+        `,
+        silenceDeprecations: ["legacy-js-api"]
+      },
       less: {},
       stylus: {},
     },

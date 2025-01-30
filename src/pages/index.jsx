@@ -1,12 +1,16 @@
 import { Head } from "minista"
+import Header from "@/layouts/Header";
 
 export default function () {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
+      <Head
+        htmlAttributes={{ lang: "ru" }}
+        bodyAttributes={{ class: "custom-body" }}
+      >
+        <title>ImDB</title>
       </Head>
-      <h1>Hello!</h1>
+      <Header />
     </>
   )
 }
