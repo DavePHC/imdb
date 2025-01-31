@@ -1,5 +1,8 @@
 import "./Header.scss"
 
+import { ReactComponent as SVGSearch } from "@/assets/icons/search.svg"
+import { ReactComponent as SVGNotification } from "@/assets/icons/notification.svg"
+
 import Logo from "@/components/Logo";
 import Button from "@/components/Button";
 
@@ -52,16 +55,18 @@ const Header = (props) => {
             <Button
               className="header__button"
               label="Search"
-              mode="transpared"
+              mode="transparent"
               isLabelHidden
               iconName="search"
+              IconFallbackSVG={SVGSearch}
             />
             <Button
               className="header__button"
               label="Notifications"
-              mode="transpared"
+              mode="transparent"
               isLabelHidden
               iconName="notification"
+              IconFallbackSVG={SVGNotification}
             />
          </div>
        </div>

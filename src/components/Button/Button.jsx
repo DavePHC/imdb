@@ -15,6 +15,7 @@ const Button = (props) => {
     iconName,
     // iconPosition = left (* text) || right (text *)
     iconPosition = "left",
+    IconFallbackSVG
   } = props;
 
   const isLink = href !== undefined
@@ -25,6 +26,7 @@ const Button = (props) => {
   const title = isLabelHidden ? label : undefined
   const iconComponent = iconName && (
     <Icon
+      FallbackSVG={IconFallbackSVG}
       className="button__icon"
       name={iconName}
     />
@@ -33,7 +35,7 @@ const Button = (props) => {
   return (
     <Component
       className={classNames(className, "button", {
-        [`button-${mode}`]: mode,
+        [`button--${mode}`]: mode,
       })}
       title={title}
       aria-label={title}
