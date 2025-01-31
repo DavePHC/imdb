@@ -9,7 +9,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-family-base), sans-serif;
   color: var(--color-grey-60);
   background-color: var(--color-black-08);
 }
