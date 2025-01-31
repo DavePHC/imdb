@@ -5,8 +5,10 @@ import { ReactComponent as SVGNotification } from "@/assets/icons/notification.s
 
 import Logo from "@/components/Logo";
 import Button from "@/components/Button";
+import BurgerButton from "@/components/BurgerButton";
 
 import classNames from "classnames";
+
 
 
 const Header = (props) => {
@@ -69,6 +71,9 @@ const Header = (props) => {
               IconFallbackSVG={SVGNotification}
             />
          </div>
+         <BurgerButton
+          className="header__burger-button visible-tablet"
+         />
        </div>
     </header>
   )
