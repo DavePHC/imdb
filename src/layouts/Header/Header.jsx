@@ -49,8 +49,20 @@ const Header = (props) => {
            </ul>
          </nav>
          <div className="header__actions">
-            <Button className="header__button"/>
-            <Button href="/logout"/>
+            <Button
+              className="header__button"
+              label="Search"
+              mode="transpared"
+              isLabelHidden
+              iconName="search"
+            />
+            <Button
+              className="header__button"
+              label="Notifications"
+              mode="transpared"
+              isLabelHidden
+              iconName="notification"
+            />
          </div>
        </div>
     </header>
