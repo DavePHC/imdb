@@ -15,10 +15,7 @@ export default function (props) {
   
   return (
     <>
-      <Head
-        htmlAttributes={{lang: "en"}}
-        bodyAttributes={{class: "custom-body"}}
-      >
+      <Head htmlAttributes={{lang: "en"}} bodyAttributes={{class: "custom-body"}}>
         <title>ImDB | {title}</title>
         <script src="/src/main.js" type="module"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>

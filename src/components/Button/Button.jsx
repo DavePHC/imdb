@@ -15,7 +15,7 @@ const Button = (props) => {
     iconName,
     // iconPosition = left (* text) || right (text *)
     iconPosition = "left",
-    IconFallbackSVG
+    hasFillIcon
   } = props;
 
   const isLink = href !== undefined
@@ -26,9 +26,9 @@ const Button = (props) => {
   const title = isLabelHidden ? label : undefined
   const iconComponent = iconName && (
     <Icon
-      FallbackSVG={IconFallbackSVG}
       className="button__icon"
       name={iconName}
+      hasFill={hasFillIcon}
     />
   )
 
