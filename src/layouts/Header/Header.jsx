@@ -28,14 +28,14 @@ const Header = (props) => {
     {
       label: "Subscriptions",
       href: "/subscriptions"
-    }
+    },
   ]
 
   return (
-    <header className="header">
+    <header className="header" data-js-overlay-menu="">
        <div className="header__inner container">
          <Logo className="header__logo" loading="eager" />
-         <dialog className="header__overlay-menu-dialog">
+         <dialog className="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
            <nav className="header__menu">
              <ul className="header__menu-list">
                {menuItems.map(({ label, href}, index) => (
@@ -66,8 +66,10 @@ const Header = (props) => {
              />
            </div>
          </dialog>
-         <BurgerButton
-          className="header__burger-button visible-tablet"
+         <BurgerButton className="header__burger-button visible-tablet"
+           extraAttrs={{
+             "data-js-overlay-menu-burger-button": "",
+           }}
          />
        </div>
     </header>

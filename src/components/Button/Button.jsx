@@ -6,7 +6,7 @@ const Button = (props) => {
   const {
     className,
     type = "button",
-    // mode = "" || "transparent"
+    // mode = "" || "transparent" || "black-10"
     mode = "",
     target,
     href,
